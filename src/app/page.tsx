@@ -1,7 +1,7 @@
 export default function Home() {
     return (
         <main>
-            <h1>HELLO NEXT!</h1>
+            <h1>Hello, run!</h1>
         </main>
     )
 }
