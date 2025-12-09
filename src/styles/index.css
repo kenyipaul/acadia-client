@@ -1,1 +1,79 @@
 @import "tailwindcss";
+@import "./form.css";
+
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/fonts/RobotoRegular.ttf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(/assets/fonts/RobotoBold.ttf);
+}
+
+@font-face {
+    font-family: RobotoCondensed;
+    src: url(/assets/fonts/RobotoCondensed.ttf);
+}
+
+html {
+    font-family: Roboto, "system-ui", sans-serif;
+}
+
+* {
+    line-height: unset;
+}
+
+@theme {
+    --font-roboto: Roboto;
+    --font-roboto-bold: RobotoBold;
+    --font-roboto-condensed: RobotoCondensed;
+
+    --color-dark-theme-100: #3f4256;
+    --color-dark-theme-200: #2a2d43;
+    --color-dark-theme-300: #1d202f;
+    --color-dark-theme-400: #151722;
+    --color-dark-theme-500: #0d0e14;
+
+    --color-success-100: #c3d6b8;
+    --color-success-200: #97b883;
+    --color-success-300: #6a994e;
+    --color-success-400: #405c2f;
+
+    --color-danger-100: #e4b5b6;
+    --color-danger-200: #c96c6d;
+    --color-danger-300: #bc4749;
+    --color-danger-400: #96393a;
+
+    --color-warn-100: #f3eab1;
+    --color-warn-200: #e6d563;
+    --color-warn-300: #cab636;
+    --color-warn-400: #867924;
+
+    --color-info-100: #d6e6f8;
+    --color-info-200: #accdf1;
+    --color-info-300: #6ea8e7;
+    --color-info-400: #3083dc;
+
+    --color-red-theme-100: #fae8ee;
+    --color-red-theme-200: #efb9cb;
+    --color-red-theme-300: #df7397;
+    --color-red-theme-400: #CA1551;
+    --color-red-theme-500: #8d0f39;
+    --color-red-theme-600: #510820;
+
+    --color-green-theme-100: #DAF2E0;
+    --color-green-theme-200: #6CCD85;
+    --color-green-theme-300: #399A52;
+    --color-green-theme-400: #1C4D29;
+    --color-green-theme-500: #0E2614;
+    --color-green-theme-600: #060f08;
+
+    --color-blue-theme-100: #e8e2fe;
+    --color-blue-theme-200: #c7b8fd;
+    --color-blue-theme-300: #a58dfb;
+    --color-blue-theme-400: #8e70fa;
+    --color-blue-theme-500: #634eaf;
+    --color-blue-theme-600: #392d64;
+
+}
