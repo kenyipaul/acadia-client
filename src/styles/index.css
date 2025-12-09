@@ -20,6 +20,10 @@ html {
     font-family: Roboto, "system-ui", sans-serif;
 }
 
+body {
+    background: #F6F6F6;
+}
+
 * {
     line-height: unset;
 }
