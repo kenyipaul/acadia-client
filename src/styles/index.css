@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./form.css";
+@import "./table.css";
 
 @font-face {
     font-family: Roboto;

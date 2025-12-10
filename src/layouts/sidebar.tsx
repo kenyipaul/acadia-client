@@ -13,16 +13,16 @@ export default function Sidebar({ children }: { children: ReactNode }) {
         <aside className={`grid h-dvh bg-white w-full max-w-65 transition-all border-r border-[#eee] absolute z-99 ${sidebarState ? "left-0" : "-left-65"} min-[1000px]:relative min-[1000px]:left-0`}>
             <main className="flex flex-col justify-between">
                 <section>
-                    <header className="p-4 flex items-center justify-between border-b border-[#eee]">
+                    <header className="p-4 px-6 flex items-center justify-between border-b border-[#eee]">
                         <h1 className="text-2xl font-bold">ACADIA</h1>
                         <button onClick={closeSidebar} className="cursor-pointer">
                             <Icon.MenuIcon />
                         </button>
                     </header>
-                    <main className="grid p-5">{children}</main>
+                    <main className="gap-1 grid p-4">{children}</main>
                 </section>
 
-                <section className="p-5">
+                <section className="p-4">
                     <LinkButton title="Settings" link="" icon={<Icon.SettingsIcon />} />
                     <LinkButton title="Log out" link="" icon={<Icon.LogoutIcon />} />
                 </section>
@@ -31,12 +31,13 @@ export default function Sidebar({ children }: { children: ReactNode }) {
     );
 }
 
-export function LinkButton({ title, link, icon }: { title: string; link: string; icon?: ReactNode }) {
+export function LinkButton({ title, link, icon, className, active_color }: { title: string, link: string, icon?: ReactNode, className?: string, active_color?: string }) {
     const path = usePathname();
+    const closeSidebar = useSidebarState((state) => state.closeSidebar);
 
     return (
-        <Link href={link}>
-            <button className={`flex ${path == link ? "bg-green-theme-100" : "" } items-center gap-5 cursor-pointer hover:text-green-theme-600 hover:bg-green-theme-100 px-5 py-4 w-full rounded-2xl`}>
+        <Link href={link} onClick={closeSidebar}>
+            <button className={`flex items-center gap-3.5 cursor-pointer px-3 py-3 w-full rounded-xl ${className} ${path == link && active_color }`}>
                 {icon}
                 <p>{title}</p>
             </button>
@@ -44,7 +45,7 @@ export function LinkButton({ title, link, icon }: { title: string; link: string;
     );
 }
 
-export function MultiLinkButton({ title, icon, children }: { title: string; icon: ReactNode; children: ReactNode }) {
+export function MultiLinkButton({ title, icon, children }: { title: string, icon: ReactNode, children: ReactNode }) {
     const [menuState, setMenuState] = useState(false);
 
     return (

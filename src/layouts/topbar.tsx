@@ -24,7 +24,7 @@ export default function TopBar() {
                             <h1 className="font-bold text-[.9em]">HI JOHN!</h1>
                             <p className="hidden text-[.7em] text-[#999] min-[700px]:flex">Admin</p>
                         </div>
-                        <Icon.ArrowDownIcon />
+                        {/* <Icon.ArrowDownIcon /> */}
                     </div>
                 </div>
             </section>
