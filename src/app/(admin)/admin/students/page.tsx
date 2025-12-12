@@ -8,7 +8,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 export default function Page() {
     return (
         <>
-            <header className="flex items-center justify-between mt-10">
+            <header className="flex items-center justify-between mt-10 flex-wrap gap-4">
                 <section>
                     <h1 className="text-[1.6rem] font-bold">Student Management</h1>
                     <p className="text-[.9em] text-[#999]">Manage all student records and information</p>

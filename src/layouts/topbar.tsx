@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import * as Icon from "@/components/ui/icons";
 import useSidebarState from "@/store/sidebar";
 
@@ -6,12 +7,12 @@ export default function TopBar() {
     const openSidebar = useSidebarState((state) => state.openSidebar);
 
     return (
-        <main className="p-3 px-5 bg-white flex items-center justify-between">
+        <main className="p-3 px-5 h-15 bg-white flex items-center border-b border-[#eee] justify-between">
             <section className="flex items-center gap-2 min-[1000px]:hidden">
                 <button onClick={openSidebar} className="cursor-pointer">
-                    <Icon.MenuIcon />
+                    <Icon.MenuIcon className="size-7.5" />
                 </button>
-                <h1 className="text-[1.4em] font-roboto-bold">ACADIA</h1>
+                <Image width={106} height={100} src="/logo.svg" alt="" />
             </section>
             <span></span>
             <section className="flex items-center gap-4">

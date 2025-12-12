@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "./form.css";
 @import "./table.css";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 @font-face {
     font-family: Roboto;
@@ -27,6 +30,7 @@ body {
 
 * {
     line-height: unset;
+    scrollbar-width: thin;
 }
 
 @theme {
