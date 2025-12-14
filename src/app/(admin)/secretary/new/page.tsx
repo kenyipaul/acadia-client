@@ -1,7 +1,13 @@
-export default function NewPage() {
+import "@/styles/pageHeader.css"
+import PageHeader from "@/components/ui/PageHeader";
+import StudentRegistrationForm from "../components/StudentRegistrationForm";
+
+export default function NewAdmissionPage() {
   return (
-    <div>
-      <h1>New adimission</h1>
-    </div>
+    <main className="p-2">
+      <PageHeader title="Students registration" subtitle="Register a new student into the system" />
+      
+      <StudentRegistrationForm />
+    </main>
   );
 }

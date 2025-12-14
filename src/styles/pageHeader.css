@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-dark: #2C293D;
+    --text-light: #6A7282;
+
+    /*fonts size*/
+    --header-h1: 1.8rem;
+}
+
+body {
+    line-height: 1.5;
+
+}
+
+.page-header_title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-top: 2rem;
+    color: var(--text-dark)
+}
+
+.page-header_subtitle {
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
