@@ -86,3 +86,12 @@ body {
     --color-blue-theme-600: #392d64;
 
 }
+
+.blink {
+    animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
