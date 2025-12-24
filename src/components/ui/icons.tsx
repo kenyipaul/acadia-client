@@ -139,7 +139,7 @@ export function CloseSidebarIcon() {
 
 export function MenuIcon({className}: {className?: string}) {
 	return (
-		<svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+		<svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
 			<path d="M6.00449 5.5C6.55677 5.5 7.00449 5.94772 7.00449 6.5C7.00449 7.05228 6.55677 7.5 6.00449 7.5C5.4522 7.5 5.00449 7.05228 5.00449 6.5C5.00449 5.94772 5.4522 5.5 6.00449 5.5Z" />
 			<path d="M6.00449 11.5C6.55677 11.5 7.00449 11.9477 7.00449 12.5C7.00449 13.0523 6.55677 13.5 6.00449 13.5C5.4522 13.5 5.00449 13.0523 5.00449 12.5C5.00449 11.9477 5.4522 11.5 6.00449 11.5Z" />
 			<path d="M6.00449 17.5C6.55677 17.5 7.00449 17.9477 7.00449 18.5C7.00449 19.0523 6.55677 19.5 6.00449 19.5C5.4522 19.5 5.00449 19.0523 5.00449 18.5C5.00449 17.9477 5.4522 17.5 6.00449 17.5Z" />
@@ -305,7 +305,7 @@ export function DeleteIcon() {
 
 export function AddIcon() {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
 			<path d="M12 4V20M20 12H4" />
 		</svg>
 	);

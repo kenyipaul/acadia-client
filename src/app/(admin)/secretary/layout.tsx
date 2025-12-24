@@ -43,7 +43,7 @@ export default function RootLayout({children}: {children: ReactNode}) {
             active_color="bg-green-theme-100 text-green-theme-400"
           />
         </Sidebar>
-        <main className="h-full w-full">
+        <main className="h-full w-full overflow-y-auto">
           <TopBar />
           <main className="px-[min(5rem,3%)] @container">{children}</main>
         </main>
