@@ -4,6 +4,10 @@ import StatsCards from "@/components/ui/statsCard";
 import type { StatCardProps } from "@/components/ui/statsCard";
 import { FaUserGraduate } from "react-icons/fa";
 import { IoIosNotifications } from "react-icons/io";
+import PageHeader from "@/components/ui/PageHeader";
+import GenderDonutChart from "./components/GenderDonutChart";
+import EnrollmentByClassChart from "./components/EnrollmentByClassChart";
+import { RecentStudentAdmissions } from "./components/RecentStudentAdmissions";
 
 const statsData: StatCardProps[] = [
   {
@@ -39,13 +43,19 @@ const statsData: StatCardProps[] = [
 export default function Secretary() {
   return (
     <main className="p-2">
-      <h1 className="header">Secretary Dashboard</h1>
-      <p className="headerDis">
-        Manage students records and school communications.
-      </p>
+      <PageHeader
+        title="Secretary dashboard"
+        subtitle="Manage students records and school communications"
+      />
 
-        <StatsCards data={statsData} />
+      <StatsCards data={statsData} />
 
+      <div className="grid grid-cols-1 md:grid-col2 lg:grid-cols-2 gap-6 mt-6">
+        <EnrollmentByClassChart />
+        <GenderDonutChart />
+      </div>
+
+      <RecentStudentAdmissions />
     </main>
   );
 }
