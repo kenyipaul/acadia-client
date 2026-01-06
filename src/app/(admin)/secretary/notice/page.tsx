@@ -6,9 +6,9 @@ import StatsCards from "@/components/ui/statsCard";
 import type { StatCardProps } from "@/components/ui/statsCard";
 import PageHeader from "@/components/ui/PageHeader";
 import { IoIosNotifications } from "react-icons/io";
-import { AnnouncementCard, Announcement } from "@/components/ui/Announcement";
+import { Announcement } from "@/components/ui/Announcement";
 import AnnouncementsClient from "@/components/ui/AnnoucementsClient";
-import "@/styles/annoucement.css"
+import "@/styles/annoucement.css";
 
 const statsData: StatCardProps[] = [
   {
@@ -40,8 +40,6 @@ const statsData: StatCardProps[] = [
     iconColor: "#6FD33B",
   },
 ];
-
-
 
 const announcements: Announcement[] = [
   {
@@ -81,7 +79,6 @@ const announcements: Announcement[] = [
     priority: "low",
   },
 ];
-
 
 export default function Notice() {
   return (
